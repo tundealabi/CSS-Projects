@@ -1,0 +1,159 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: #f0f2f5;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#left, #right{
+    height: 100vh;
+    margin-bottom: 6em;
+}
+
+#left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#left_content{
+    width: 80%;
+}
+
+#left_content .title{
+    color: #1877f2;
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+#left_content .text{
+    color: #36383b;
+    font-size: 2rem;
+}
+
+#right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign_in{
+    background: #ffffff;
+    box-shadow: 3px 3px 36px -15px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: auto;
+}
+
+#sign_in form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.3rem;
+}
+
+#sign_in .signIn{
+    width: 80%;
+    text-align: center;
+}
+
+.signIn .forgot{
+    text-decoration: none;
+    color: #4d96f5;
+}
+
+#right .create_page{
+    text-decoration: none;
+    color: #1c1e21;
+    margin-top: 2rem;
+}
+
+.signIn .forgot:hover, #right .create_page:hover{
+    text-decoration: underline;
+}
+
+form input{
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #555;
+    color: #90949c;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+}
+
+form button, .signIn .create_acct{
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    background: #1877f2;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 1.9s;
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
+
+.signIn .create_acct{
+    background: #42b72a;
+    margin: auto;
+    width: 50%;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+
+
+form button:hover {
+    background: #64a3f5;
+}
+
+#main_footer{
+    background: #ffffff;
+    color: #9fa2a5;
+}
+
+#main_footer #don{
+    width: 80%;
+    margin: auto;
+    padding-top: 2rem;
+   
+}
+
+#main_footer a{
+    color: #9fa2a5;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+#main_footer a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width:900px){
+    #left{
+        display: none;
+    }
+
+    #right{
+        margin-bottom: 1em;
+    }
+}
